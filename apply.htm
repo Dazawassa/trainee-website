@@ -1,0 +1,135 @@
+<!doctype html5>
+<html>
+
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Apply</title>
+	
+		<style>
+		
+		</style>
+	
+		<script language="Javascript">
+		function doIt() {
+		var error=0;
+
+		if (applyTable.myFirstName.value=="") {
+			alert("Please enter a first name");
+			document.getElementById("myFirstName").style.background="Red";
+			error=1
+			}
+	
+		if (applyTable.myLastName.value=="") {
+			alert("Please enter a second name");
+			document.getElementById("myLastName").style.background="Red";
+			error=1
+			}
+			
+		if (applyTable.myAddress.value=="") {
+			alert("Please enter an Address");
+			document.getElementById("myAddress").style.background="Red";
+			error=1
+			}
+			
+		if (applyTable.myPhoneNumber.value=="") {
+			alert("Please enter a phone number");
+			document.getElementById("myPhoneNumber").style.background="Red";
+			error=1
+			}
+	
+		if (error==0)  {
+			alert("The form will be sent");
+			applyTable.submit()}
+
+		}
+
+		function ClearColors()
+		{
+			error=0
+			document.getElementById("myFirstName").style.background="White";
+			document.getElementById("myLastName").style.background="White";
+			document.getElementById("myPhoneNumber").style.background="White";
+			document.getElementById("myAddress").style.background="White";
+			applyTable.reset()
+		}
+</script>
+		
+
+	</head>
+
+	<body>
+		<div class="navbar">
+			<header>
+				<nav>
+					<h1>
+						<abbr title="This is the page you are currently on."><a href="#body">Apply</a></abbr>
+						<abbr title="View our current trainees."><a href="trainees.htm">Trainees</a></abbr>
+						<abbr title="The homepage for this website."><a href="index.htm">Home</a></abbr>
+						<abbr title="Look at the requirments for applying."><a href="specifications.htm">Specifications</a></abbr>
+						<abbr title="Links to courses to help you apply."><a href="courses.htm">Courses</a></abbr>
+					</h1>
+				</nav>
+			</header>
+		</div>
+		
+		
+		<div class="main" id="body">
+			<img class="logoStyle2" src="images/Logo.png" title="Company Logo" alt="company logo" width="25%" height="7%"/>
+			<h2>Summary of applying:</h2>
+			<p>
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
+			<br/>
+			<form name="applyTable" action="#" method="post">
+			<table>
+				<tr>
+					<td>First Name:</td>
+					<td><input type="text" name="myFirstName" id="myFirstName"/></td>
+				</tr>
+				
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" name="myLastName" id="myLastName"/></td>
+				</tr>
+				
+				<tr>
+					<td>Address:</td>
+					<td><textarea name="myAddress" id="myAddress"></textarea></td>
+				</tr>
+				
+				<tr>
+					<td>Phone Number:</td>
+					<td><textarea name="myPhoneNumber" id="myPhoneNumber"></textarea></td>
+				</tr>
+				
+				<tr>
+					<td>Job title:</td>
+					<td>
+						<input type="radio" name="jobTitle" value="true" checked="checked"/>JavaScript Programer: 
+						<input type="radio" name="jobTitle"/>Web Designer: 
+						<input type="radio" name="jobTitle"/>Backend Developer: 
+					</td>
+				</tr>
+
+				<tr>
+					<td>Submit</td>
+					<td><input type="button" value="Send" onclick="doIt()"/></td>
+				</tr>
+				
+				<tr>
+					<td>Clear all text boxes</td>
+					<td><input type="button" onClick="ClearColors()" value="Reset"></td>
+				</tr>
+			</table>
+			</form>
+		<div>
+		
+		<footer style="bottom: 75;">
+			<h6>Copyright 2020 - 2021</h6>
+		</footer>
+	<body>
+</html>

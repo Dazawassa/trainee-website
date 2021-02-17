@@ -1,0 +1,99 @@
+body {
+	text-align:center;
+}
+
+table, td{
+	border:thin solid black;
+	margin:auto;
+}
+
+ul{
+	text-align:left;
+}
+
+footer{
+	text-align: left;
+	position:absolute;
+}
+
+hr{
+	width: 100%;
+	border: thin solid black;
+}
+
+abbr{
+	text-decoration: none;
+}
+
+a:link, a:visited {
+  color: white;
+}
+
+.navbar{
+	height:8%;
+	text-align:center;
+	font-weight:bold;
+	width:100%;
+	background-color:#4d4d4d;
+	top:0;
+	left:0;
+	position:fixed;
+	font-family: Verdana, sans-serif;
+	z-index:1;
+}
+
+.main{
+	width:90%;
+	height:100%;
+	left:75;
+	top:80;
+	position:absolute;
+	background-color:white;
+	text-align:center;
+	font-family: Verdana, sans-serif;
+	background-color:white;
+}
+
+.main2{
+	width:90%;
+	height:100%;
+	left:75;
+	top:150;
+	position:absolute;
+	background-color:white;
+	text-align:center;
+	font-family: Verdana, sans-serif;
+	background-color:white;
+}
+
+.logoStyle{
+	position:absolute;
+	float:left;
+}
+
+.logoStyle2{
+	position:absolute;
+	left:50;
+}
+
+.leftSide{
+	text-align:left;
+	position:absolute;
+}
+
+.JavascriptClass{
+	height: 150px;
+	width: 150px;
+	float: right;
+}
+
+.WebDeveloperClass{
+	height: 150px;
+	width: 300px;
+	float: right;
+}
+
+.tableclass{
+	padding: 10px;
+	text-align: left;
+}
